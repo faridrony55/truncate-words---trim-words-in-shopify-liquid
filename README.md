@@ -1,1 +1,13 @@
-# truncate-words---trim-words-in-shopify-liquid
+{% liquid
+  assign words = content | split: ' '
+  assign truncated = words | slice: 0, limit | join: ' '
+  if words.size > limit
+    assign truncated = truncated | append: ''
+  endif
+%}
+{{ truncated }}
+
+
+
+## How to call 
+ {% render 'truncate_words' with content: product.title limit: 10 %}
