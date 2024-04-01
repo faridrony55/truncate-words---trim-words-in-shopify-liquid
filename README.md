@@ -4,6 +4,8 @@
 
 ### Use this snippet 
 
+#### Make a Snippet
+
 {% liquid <br/>
   assign words = content | split: ' ' <br/>
   assign truncated = words | slice: 0, limit | join: ' ' <br/>
