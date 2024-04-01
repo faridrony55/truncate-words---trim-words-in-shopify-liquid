@@ -1,3 +1,5 @@
+## Use this snippet 
+
 {% liquid
   assign words = content | split: ' '
   assign truncated = words | slice: 0, limit | join: ' '
@@ -10,4 +12,4 @@
 
 
 ## How to call 
- {% render 'truncate_words' with content: product.title limit: 10 %}
+{% render 'truncate_words' with content: product.title limit: 10 %}
