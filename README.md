@@ -1,11 +1,11 @@
 ## How to trim a big sentence or paragraph and display where you need.   
-## I am using for product title
+ 
 
 
 ### Use this snippet 
 
 {% liquid
-  assign words = content | split: ' '
+  assign words = content | split: ' ' __
   assign truncated = words | slice: 0, limit | join: ' '
   if words.size > limit
     assign truncated = truncated | append: ''
