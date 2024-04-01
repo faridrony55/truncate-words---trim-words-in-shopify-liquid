@@ -5,7 +5,7 @@
 ### Use this snippet 
 
 {% liquid
-  assign words = content | split: ' ' __
+  assign words = content | split: ' ' <br />
   assign truncated = words | slice: 0, limit | join: ' '
   if words.size > limit
     assign truncated = truncated | append: ''
