@@ -4,7 +4,7 @@
 
 ### Use this snippet 
 
-#### Make a Snippet
+#### Make a Snippet called truncate-words.liquid
 
 {% liquid <br/>
   assign words = content | split: ' ' <br/>
@@ -17,5 +17,7 @@
 {{ truncated }}
 
 
-### How to call 
+ 
+#### Use this code anywhere. To call the content change the product.title  and update the limit  
+
 {% render 'truncate_words' with content: product.title limit: 10 %}
