@@ -4,15 +4,15 @@
 
 ### Use this snippet 
 
-{% liquid
-  assign words = content | split: ' ' <br />
-  assign truncated = words | slice: 0, limit | join: ' '
-  if words.size > limit
-    assign truncated = truncated | append: ''
-  endif
-%}
-{{ truncated }}
+{% liquid <br/>
+  assign words = content | split: ' ' <br/>
+  assign truncated = words | slice: 0, limit | join: ' ' <br/>
+  if words.size > limit <br/>
+    assign truncated = truncated | append: '' <br/>
+  endif <br/>
+%} <br/>
 
+{{ truncated }}
 
 
 ### How to call 
